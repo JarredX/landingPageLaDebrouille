@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --violet: #b30590 ;
+
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color :white;
+    background: linear-gradient(#531a94, #13062f, #411573);
+
+}
+
+
+
+header nav {
+    padding:30px 5% 00px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+   
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p {
+    margin: 0 15px 0 0 ;
+    color: #ccc;
+   
+}
+    
+ /* effet curseur */
+ header nav .right p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header nav .right button {
+    padding: 5px 15px;
+    font-size: 16px;
+    /* inherit prends la couleur de son parent */
+    background-color:inherit ; 
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+
+}
+
+header nav .right button:hover {
+    color:inherit;
+    background-color: var(--violet);
+}
+
+
+.presentation {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.presentation .product-presentation {
+    margin: 0;
+    flex-shrink: 3;
+    
+    
+
+}
+
+.presentation .product-presentation h1 {
+    margin: 0;
+    font-size: 4vw;
+    width:80%;
+}
+
+.presentation .product-presentation p {
+    font-weight: 300px;
+    color:#e9e9e9
+}
+
+.presentation .product-presentation button {
+    margin-top: 20px;
+    padding:15px 20px; 
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.presentation .image-presentation {
+    width:auto;
+
+
+}
+.first .product-presentation button {
+    background-color: var(--violet);
+    border: 1px solid var(--violet);
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+
+}
+
+.first .product-presentation button:hover {
+    background-color: inherit;
+    color: var(--violet)
+}
+
+.first .product-presentation .small-images {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+
+.first .product-presentation .small-images .small {
+    padding: 20px;
+    background-color: #33314d;
+    margin: 0 15px 15px 0;
+    border-radius: 30px 5px 20px 5px;
+    transition: filter 0.5s;
+
+
+}
+
+.first .product-presentation .small-images .small:hover {
+    filter:brightness(50%)
+}
+
+.first .product-presentation .small-images .small img {
+    width: 100px;
+
+
+}
+
+
+
+
+.second {
+    margin: 0;
+    background-color: #13181d
+
+}
+
+.second .product-presentation .new {
+    color: var(--violet);
+}
+
+.second .product-presentation button {
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    border: solid 1px var(--violet);
+    color: var(--violet);
+
+}
+
+.second .product-presentation button:hover {
+    background-color: var(--violet);
+    color: white;
+    transition: color 0.5s, backgrond-color 0.5s;
+}
+
+footer h3 {
+    color: var(--violet);
+}
+
+footer{
+    padding: 30px 5% 00px 5%;
+    margin: 0;
+    background-color: black;
+    display: grid;
+    overflow: scroll;
+
+    repeat:(3, 1fr);grid-template-rows: 1fr;
+    grid-column-gap: 60px;grid-row-gap: 10px;
+   
+}
+
+.column1 { grid-area: 1 / 1 / 2 / 2; }
+.column2 { grid-area: 1 / 2 / 2 / 3; }
+.column3 { grid-area: 1 / 3 / 2 / 4; }
+
+.column1 {
+    padding: auto;
+}
+
+
+
+
+
+/* fomulaire de contact  */
+
+/* .maps .contactez-nous {
+    display: flex;
+    align-items: center;
+} */
+
+.maps h1 p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.maps {
+    width: 100%;
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    background: inherit;
+    
+
+}
+
+
+
+
+
+/* .maps {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0; 
+}
+
+.maps iframe {
+ left:0;
+ top:0;
+ height:100%;
+ width:100%;
+ position:absolute;
+} */
+
+.contactez-nous .maps {
+    display: flex;
+    gap: 10px;
+    row-gap: 10%;
+}
+
+
+
+
+.contactez-nous {
+    width: 100%;
+    margin: 0 50px 0 50px;
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 0 100px 0 100px;
+    background: inherit;
+    align-items: flex-start;
+  }
+  
+  .contactez-nous > h1 {
+    font-weight: 500;
+  }
+  
+  .contactez-nous > p {
+    font-weight: 300;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+  }
+  
+  form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+  
+  form div > input, form div > select, form div > textarea {
+    background: #13181D;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500px;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  }
+  
+  form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+  }
+  
+  form div > input::placeholder, form div > textarea::placeholder {
+    color: var(--violet);
+  }
+  
+  form div > select:invalid {
+    color: var(--violet);
+  }
+  
+  form div > select option {
+    background: white;
+    color: #303030;
+  }
+  
+  form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+  }
+  
+  form button {
+    width: 450px;
+    max-width: 100%;
+    height: 60px;
+    font-weight: 700;
+    font-size: 100%;
+   
+
+    
+    border: 1px solid var(--violet);
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+    background-color: #13181D ; 
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+
+
+
+
+
+
+
+
+/* media queries:
+permets d'appliquer des propiété seulement quand la taille de l'ecran est definie (exemple format mobile).
+ */
+
+@media screen and (max-width: 640px) {
+    header nav .right p {
+        display: none;
+    
+    }
+
+    .presentation .product-presentation h1 {
+        font-size: 2em;
+    }
+    .presentation .image-presentation {
+        display: none;
+    }
+
+    .first .product-presentation .small-images .small img {
+        width: 90px;
+    }
+
+
+    
+
+    .contactez-nous {
+        width: 80wh;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+
+}
+
+/* fin de la barre de la barre de navigation */
+

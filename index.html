@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La débrouille</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>La Débrouille</h1>
+            <div class="right">
+                <p>Accueil</p>
+                <p>Prestation</p>
+                <p>Contact</p>
+                <button>Réserver</button>
+            </div>
+        </nav>
+    
+
+    <section class="presentation first">
+        <div class="product-presentation">
+            <h1>Prenez du temps et laissez-nous travailler</h1>
+            <p>Vous n’avez pas le matériel nécessaire pour des travaux de bricolage ? Vous ne vous sentez pas capable d’installer une tringle à rideaux ? Ou vous ne souhaitez tout simplement pas perdre de temps avec le montage de meuble ? Karl, Sadam et Amadou, vos techniciens bricolage , sont là pour vous ! Découvrez ce qu’ils peuvent faire pour vous simplifier la vie !
+            </p>
+            <button>Reserver maintenant</button>
+            <div class="small-images">
+                <div class="small"><img src="asset/23243519_1907.i039.001.p.m004.c30.professional_cleaning_service_isometric_set-12__1_-removebg-preview.png" alt=""></div>
+                <div class="small"><img src="asset/19197736-removebg-preview (1).png" alt=""></div>
+                <div class="small"><img src="asset/electrician_05-removebg-preview.png" alt=""></div>
+            </div>
+        </div>
+        <div class="image-presentation"><img src="asset/c68b54a0-ff8c-45f9-a41a-4a2301aca639.png" alt="">
+    </section>
+    </header>
+
+    <section
+     class="presentation second">
+        <div class="product-presentation">
+            <p class="new">Nettoyage textile</p>
+            <h1>Nouvelle presation disponible</h1>
+            <p>
+                Les tissus des sièges de voiture, les moquettes et les tapis, sont largement sollicités au quotidien. Pour conserver un aspect neuf, un simple aspirateur de voiture et un nettoyage à la main ne suffisent pas. Dans certains cas, il est même nécessaire de procéder à un nettoyage en profondeur que seuls les injecteurs extracteurs, appelés aussi shampouineuses peuvent offrir.
+            </p>
+            <button>Voir les specifications</button>
+        </div>
+        <div class="image-presentation">
+            <img src="asset/2390327_1-removebg-preview.png" >
+        </div>
+
+
+    </section>
+        
+
+    <section class="presentation third">
+        
+
+        <div class="contactez-nous ">
+            <h1>Contactez-nous</h1>
+            <p>Un problème, une questionn? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+            <p>Remplisser le formulaire ci-dessous :</p>
+            <form action="/page-traitement-donnees" method="post">
+              <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="BOLT" required>
+              </div>
+              <div>
+                <label for="prenom">Votre prenom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Usain" required>
+              </div>
+              <div>
+                <label for="ville">Votre ville</label>
+                <input type="text" id="ville" name="ville" placeholder="Ma ville" required>
+              </div>
+
+              <div>
+                <label for="meeting-time">Choisissez votre creneaux:</label>
+                <input type="datetime-local" id="meeting-time"
+                name="meeting-time" value="2023-10-14T19:30"
+                min="2023-01-01T08:00" max="2030-12-14T16:30" required>
+
+              </div>
+            
+              <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+              </div>
+              <div>
+                <label for="phone">Votre Numero  de telephone</label>
+                <input type="number" id="phone" name="phone" placeholder="mon numero" required>
+              </div>
+              <div>
+                <label for="sujet">Quel job voudriez vous nous confier ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez parmis la selection</option>
+                    <option value="Montage de meuble">Montage de meuble</option>
+                    <option value="Nettoyage textile">Nettoyage textile (canapé, matelas, fauteuil...) </option>
+                    <option value="Autre">Autre...</option>
+                 </select>
+              </div>
+              <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+              </div>
+              <div>
+                <button type="submit">Envoyer mon message</button>
+              </div>
+            </form>
+            
+            </div>
+
+
+
+            
+            
+                
+    </section>
+
+    <section class="presentation">
+        <div class="maps">
+            <div>
+                    <h1>Ou sommes nous ?</h1>
+                    <p>Adresse : 54 Bd Lavéran, 13013 Marseille</p>
+                <p>
+                    
+                    <p>Horaires :/<p> 
+                    <p>lundi : 08:00–12:30 - 13:30–16:45</p>
+                    <p>mardi : 08:00–12:30 - 13:30–16:45</p>
+                    <p>mercredi : 08:00–12:30 - 13:30–16:45</p>
+                    <p>jeudi : 08:00–12:30 - 13:30–16:45</p>
+                    <p>vendredi : 08:00–12:30</p>
+                    <p>samedi : Fermé</p>
+                    <p>dimanche : Fermé</p>
+                    
+                    <br>
+                    <p>Téléphone : 09 72 72 39 36</p> 
+                </p>
+            </div>
+            <hr>
+                <div id="carte">
+                    <iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.318183402814!2d5.412047316080698!3d43.328530481381144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf97c6a188b5%3A0x26144d7cd0241160!2sAFPA!5e0!3m2!1sfr!2sfr!4v1672974999480!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="column1">
+            <h3>La Débrouille</h3>
+            
+            <p>L'equipe</p>
+            <p>Contact@ladebrouille.fr</p>
+            <p>contactez nous</p>
+        </div>
+        <div class="column2">
+            <h3>Recrutement</h3>
+            <p>recrute@ladebrouille.fr</p>
+            <p>Postule en ligne</p>
+            <p>Comment faire ?</p>
+        </div>
+        <div class="column3">
+            <h3>Reseaux</h3>
+            <p>SnapChat</p>
+            <p>Intagram</p>
+            <p>Twitter</p>
+        </div>
+        
+        
+        
+    </footer>
+
+</body>
+</html>
+
+<!-- raccourcis . + le nom de la classe ouvre affiche directement la div avec le nom de la .class -->
